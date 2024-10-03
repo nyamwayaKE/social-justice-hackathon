@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Vocal Citizen</title>
+            <link rel="stylesheet" href="styles.css">
+            <script src="script.js"></script>
+            
+        </head>
+        <body>
+            <header>
+                <h1>VOCAL CITIZEN</h1>
+                <img src="images.jpg" alt="logo"  width="50px" height="50px" >
+                <nav>
+                    <ul>
+                        <li><a href="#about us">About us</a></li>
+                        <li><a href="#petitions">Petitions</a></li>
+                        <li><a href="#polls">Polls</a></li>
+                        <li><a href="#constitution">Constitution</a></li>
+                        <button type="button">Login</button>
+                        <button type="button">Sign up</button>
+                    </ul>
+                </nav>
+            </header>
+            <section id="About us">
+                <h2>About us</h2>
+                <p>Vocal citizen is an online engagement platform whereby citizens can create petitions against their elected representatives.</p>
+                <p>Citizens can also create polls to guide them on matters that affect them, to try and come up with solutions.</p>
+                <p>It aims to also provide a platform whereby elected leaders can engage with the people they are representing.</p>
+            </section>    
+            <section  id= "constitution">
+                <h2>Kenyan Constitution</h2>
+                <a href="The_Constitution_of_Kenya_2010 (1).pdf">Download the Kenyan Constitution</a>
+            </section>
+            
+            <section id="conversations">
+                <h2>Conversations</h2>
+                <form id="conversationForm" onsubmit="submitConversation(event)">
+                    <input type="text" id="conversationTopic" placeholder="Conversation Topic" required>
+                    <textarea id="conversationDescription" placeholder="Description" required></textarea>
+                    <button type="submit">Start Conversation</button>
+                </form>
+                <div id="conversationsList"></div>
+            </section>
+
+            <section id="petitions">
+                <h2>Petitions</h2>
+                <form id="petitionForm" onsubmit="submitPetition(event)">
+                    <input type="text" id="petitionTitle" placeholder="Petition Title" required>
+                    <textarea id="petitionDescription" placeholder="Petition Description" required></textarea>
+                    <button type="submit">Create Petition</button>
+                </form>
+                <div id="petitionsList"></div>
+            </section>
+
+            <section id="polls">
+                <h2>Polls</h2>
+                <form id="pollForm" onsubmit="submitPoll(event)">
+                    <input type="text" id="pollQuestion" placeholder="Poll Question" required>
+                    <input type="text" id="option1" placeholder="Option 1" required>
+                    <input type="text" id="option2" placeholder="Option 2" required>
+                    <button type="submit">Create Poll</button>
+                </form>
+                <div id="pollsList"></div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 vocal citizen. All rights reserved.</p>
+            </footer>
+        </body>
+    </html>
